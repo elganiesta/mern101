@@ -13,7 +13,7 @@ class ShoppingList extends Component {
     }
 
     render() {
-        const {items} = this.props.item;
+        const {items} = this.props.items;
         return (
             <Container>
                 <Button color="dark" style={{marginBottom:'2rm'}}
@@ -51,11 +51,11 @@ class ShoppingList extends Component {
 
 ShoppingList.propTypes = {
     getItems: PropTypes.func.isRequired,
-    item: PropTypes.object.isRequired
+    items: PropTypes.object.isRequired
 }
 
 const mapStateToProps = (state) => ({
-    item: state.items
+    items: state.items
 });
 
  
